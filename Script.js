@@ -32,7 +32,7 @@ const puppeteer = require('puppeteer');
 
   // Save JSON
   const fs = require('fs');
-  fs.writeFileSync('Resultt.json', JSON.stringify(data, null, 2));
+  fs.writeFileSync('data.json', JSON.stringify(data, null, 2));
 
   // To create PDF of the page
   await page.pdf({ path: 'Resultt.pdf', format: 'A4' });
